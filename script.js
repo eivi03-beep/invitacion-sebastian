@@ -10,6 +10,26 @@ botonAbrir.addEventListener("click", () => {
     bienvenida.style.display = "none";
     invitacion.style.display = "block";
 
+
+    const sonidoOlas = document.getElementById("olas");
+    const musica = document.getElementById("musica");
+
+
+    sonidoOlas.play();
+
+    musica.play();
+
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+
+    bienvenida.style.display = "none";
+    invitacion.style.display = "block";
+
     window.scrollTo({
         top:0,
         behavior:"smooth"
