@@ -1,0 +1,215 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5fbff;
+    color:#123;
+    overflow-x:hidden;
+}
+
+
+#bienvenida{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+    background:
+    linear-gradient(
+    rgba(0,40,80,.65),
+    rgba(0,150,220,.45)
+    ),
+    url("assets/img/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+
+.contenido{
+    max-width:500px;
+    color:white;
+    animation:entrada 2s ease;
+}
+
+
+.contenido h3{
+    font-size:20px;
+    letter-spacing:3px;
+}
+
+
+.contenido h1{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin:15px 0;
+}
+
+
+.contenido h2{
+    font-size:55px;
+    color:#dff6ff;
+}
+
+
+.contenido p{
+    margin:25px 0;
+    line-height:1.8;
+}
+
+
+button{
+    background:white;
+    color:#005b8f;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+#invitacion{
+    display:none;
+}
+
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+
+    background:
+    linear-gradient(
+    rgba(0,80,130,.55),
+    rgba(0,180,240,.35)
+    ),
+    url("assets/img/fondo.jpg");
+
+    background-size:cover;
+    color:white;
+}
+
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:45px;
+}
+
+
+.hero p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+
+section{
+    padding:45px 25px;
+    text-align:center;
+}
+
+
+section h2{
+    color:#005b8f;
+    margin-bottom:20px;
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+}
+
+
+.contador{
+    background:white;
+}
+
+
+#cuenta{
+    margin-top:20px;
+    font-size:28px;
+    font-weight:bold;
+    color:#0077b6;
+}
+
+
+.evento,
+.sobres{
+    background:#eefaff;
+}
+
+
+.sobres{
+    border-top:2px solid #cbefff;
+}
+
+
+.botones{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+}
+
+
+.btn{
+    text-decoration:none;
+    background:#0077b6;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    width:90%;
+    max-width:350px;
+}
+
+
+.whatsapp{
+    background:#25D366;
+}
+
+
+footer{
+    background:#003049;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+
+@keyframes entrada{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.contenido h1{
+font-size:32px;
+}
+
+.contenido h2{
+font-size:45px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+}
